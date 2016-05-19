@@ -4,10 +4,133 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+
+  <!-- this is the link to my css file, music.css -->
+
+  <link rel="stylesheet" type="text/css" href="music.css">
 </head>
 
-<body>
+	<body>
+<div>
+	<header id="header" class="">
+<!-- enter header information here -->
+		<!-- The use of # with href makes this a placeholder for a future web address -->
 
+		<ul id="actions">
+				<li><a href="#" class= "selected">View Music</a></li>
+				<li>|</li>
+				<li><a href="#">Add Music</li></a>
+				<li>|</li>
+				<li><a href="#">Profile</li></a>
+		</ul>
+		
+	</header>
 
-</body>
+	<div id="left-side" class="">
+<!-- This is for the left side of the final product -->
+	 
+	 <!-- This is for the slider -->
+  <div>
+	<label for="song-length">Song Length</label>
+  <input id="song-length" type="range" name="duration" min="0" max="30" step="0.5" value="15.0">
+  </div> 
+  
+  <!-- This is for the artist dropdown box -->
+		<div>
+			<label for="artist">Artist</label>
+	      <select id="artist_name">
+						<option value="" disabled selected>Select One</option>
+	          <option value="Van Halen">Van Halen</option>
+	          <option value="Rush">Rush</option>
+	          <option value="Pink Floyd">Pink Floyd</option>
+	          <option value="The Who">The Who</option>
+	          <option value="The Rolling Stones">The Rolling Stones</option> 
+	          <option value="Styx">Styx</option>
+	      </select>
+		</div>
+	
+		<!-- This is for the Album dropdown box -->
+		<div>
+			<label for="album">Album</label>
+      	<select id="album_name">
+      		<option value="" disabled selected>Select One</option>
+          <option value="Dark Side of the Moon">Dark Side of the Moon</option>
+          <option value="Moving Pictures">Moving Pictures</option>
+          <option value="Pinball Wizard">Pinball Wizard</option>
+          <option value="Mr. Roboto">Mr. Roboto</option>
+          <option value="Paint It Black">Paint It Black</option>
+          <option value="Eminence Front">Eminence Front</option>
+      	</select>
+		</div>
+	
+		<!-- This is for the Genre checkboxes -->
+		<div>
+			<legend>Genre</legend>
+      <input type="checkbox" name="genre" value="student"> Rock
+      <input type="checkbox" name="genre" value="student"> Pop
+      <input type="checkbox" name="genre" value="student"> Blues <br>
+      <input type="checkbox" name="genre" value="student"> Classical
+      <input type="checkbox" name="genre" value="student"> Jazz
+      <input type="checkbox" name="genre" value="student"> Hip-Hop
+		</div>
+      
+		<!-- This is for the filter button -->
+      <div class="button">
+        <button type="submit">FILTER</button>
+    	</div>
+      
+		</div>
+
+<!-- This area is for the right side of the music tool -->
+		
+	<section id="right-side" class="">
+
+			<div>
+				<h2>Song Name</h2>
+						<ol>
+							<li>Artist Name</li>
+							<li>|</li>
+							<li>Album Name</li>
+							<li>|</li>
+							<li>Genre</li>
+						</ol>
+			</div>
+				
+			<div>
+				<h2>Song Name</h2>
+						<ol>
+							<li>Artist Name</li>
+							<li>|</li>
+							<li>Album Name</li>
+							<li>|</li>
+							<li>Genre</li>
+						</ol>
+			</div>
+		
+			<div>
+				<h2>Song Name</h2>
+						<ol>
+							<li>Artist Name</li>
+							<li>|</li>
+							<li>Album Name</li>
+							<li>|</li>
+							<li>Genre</li>
+						</ol>
+			</div>
+			
+			<div>
+				<h2>Song Name</h2>
+						<ol>
+							<li>Artist Name</li>
+							<li>|</li>
+							<li>Album Name</li>
+							<li>|</li>
+							<li>Genre</li>
+						</ol>
+			</div>
+
+		</section
+		</div>
+	</body>
 </html>
+

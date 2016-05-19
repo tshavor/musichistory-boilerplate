@@ -1,0 +1,44 @@
+header {
+	background-color:#FFB4B0;
+	text-decoration:none;
+	border: 2px solid black;
+	font-size: 1.2em;
+}
+
+header{
+	width: 75%;
+	padding: 0px;
+
+  /*margin-left: 12.5%; */
+  /*margin-right: 12.5%*/
+}
+
+li{
+	list-style: none;
+	display: inline;
+
+}
+#actions *{
+text-decoration: none;
+list-style:none;
+display: inline;
+}
+
+
+#left-side{
+	background-color: #4DD7FA;
+	border: 2px solid black;
+}
+
+#right-side{
+	background-color: #FEFAC0;
+	border: 2px solid black;
+}
+
+h2{
+	color: #785616;
+}
+
+#song-length {
+
+}
