@@ -17,7 +17,7 @@ songs[songs.length] = "Paranoid > by Black Sabbath on the album Paranoid";
 var removeChar= [];
 for (var i = 0; i<songs.length; i++) {
 		removeChar.push(songs[i].replace(/[^a-z0-9\s\>]/gi, ""))
-		console.log(removeChar);
+		// console.log(removeChar);
 }
 
 // Students must find and replace the > character in each item with a - character.
@@ -27,14 +27,27 @@ finalArray.push(removeChar[i].replace (/>/g,"-"))
 // for finalArray.push(removeChar[i].replace(">","-"))
 // Must add each string to the DOM in index.html in the main content area.
 
-var finalSongs=document.getElementById("right-side");
+var finalSongs=document.getElementById("right_side");
 finalSongs.innerHTML+= `<p> ${finalArray[i]}</p>`
-		console.log("finalArray", finalArray);
+		// console.log("finalArray", finalArray);
 	}
 
 
 
 
+document.getElementById("userSubmit").addEventListener ("click", function (){
+// set up variables to capture user input from DOM:////////
+var userSong= document.getElementById("userSong").value
+// console.log("user Song", userSong.value);
+var userArtist= document.getElementById("userArtist").value
+var userAlbum= document.getElementById("userAlbum").value
 
+// this variable combines all of the 3 input variables:
+var newSong= userSong + " by " + userArtist + " on the album " + userAlbum;
+
+	finalArray.push(newSong);
+		right_side.innerHTML += `<p>${newSong}</p>`
+		console.log ("new Song", newSong, "finalArray", finalArray)
+})
 
 
