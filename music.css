@@ -1,3 +1,9 @@
+#actions *{
+text-decoration: none;
+list-style:none;
+display: inline;
+}
+
 header {
 	background-color:#FFB4B0;
 	text-decoration:none;
@@ -8,21 +14,12 @@ header {
 header{
 	width: 75%;
 	padding: 0px;
-
-
 }
 
 li{
 	list-style: none;
 	display: inline;
-
 }
-#actions *{
-text-decoration: none;
-list-style:none;
-display: inline;
-}
-
 
 #left-side{
 	background-color: #4DD7FA;
@@ -41,3 +38,26 @@ h2{
 #song-length {
 
 }
+
+
+/*/////////ADDED IN MUSIC PLAYER 3/////////////////////*/
+ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+  background-color: goldenrod;
+  padding: 5px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-size: 2em;
+}
+/*/////////ADDED IN MUSIC PLAYER 3/////////////////////*/

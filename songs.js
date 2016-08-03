@@ -25,19 +25,13 @@ var finalArray= [];
 for (var i = 0; i<songs.length; i++) {
 finalArray.push(removeChar[i].replace (/>/g,"-"))
 // for finalArray.push(removeChar[i].replace(">","-"))
+// Must add each string to the DOM in index.html in the main content area.
+
 var finalSongs=document.getElementById("right-side");
 finalSongs.innerHTML+= `<p> ${finalArray[i]}</p>`
 		console.log("finalArray", finalArray);
 	}
 
-// Must add each string to the DOM in index.html in the main content area.
-//
-
-
-
-// var phrase = "Hey, look at me!";
-// var element = document.getElementById("right-side");
-// element.innerHTML = phrase;
 
 
 

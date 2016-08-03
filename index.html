@@ -15,16 +15,17 @@
 	<header id="header" class="">
 <!-- enter header information here -->
 		<!-- The use of # with href makes this a placeholder for a future web address -->
-
+<!-- ///////////////////NAVBAR HERE///////////////////////////////////////////////////////// -->
 		<ul id="actions">
-				<li><a href="#" class= "selected">View Music</a></li>
+				<li><a href="#" id= "link-list" class= "selected">List Music</a></li>
 				<li>|</li>
-				<li><a href="#">Add Music</li></a>
-				<li>|</li>
-				<li><a href="#">Profile</li></a>
+				<li><a href="#" id= "link-add" class= "" >Add Music</li></a>
+				<!-- <li>|</li>
+				<li><a href="#" class= "" >Profile</li></a> -->
 		</ul>
-
 	</header>
+<!-- HOME SECTION and MUSIC VIEW HERE///////////////////////////////////////// -->
+<div id="list-view">
 
 	<div id="left-side" class="">
 <!-- This is for the left side of the final product -->
@@ -78,60 +79,33 @@
       <div class="button">
         <button type="submit">FILTER</button>
     	</div>
+</div>
 
-		</div>
+<!-- This area is for the right side of the music tool whwre the music is displayed! -->
 
-<!-- This area is for the right side of the music tool -->
+	<section id="right-side" class="right-side"></section>
 
-	<section id="right-side" class="right-side">
+</div>
+  <!-- //////////////////END OF HOME SECTION and MUSIC VIEW//////////////////////////// -->
+  <!-- ///////////////////////ADD MUSIC VIEW STARTS HERE//////////////////////////////////// -->
 
-			<!-- <div>
-				<h2>Song Name</h2>
-						<ol>
-							<li>Artist Name</li>
-							<li>|</li>
-							<li>Album Name</li>
-							<li>|</li>
-							<li>Genre</li>
-						</ol>
-			</div>
+<div id="add-view" class="hidden">
 
-			<div>
-				<h2>Song Name</h2>
-						<ol>
-							<li>Artist Name</li>
-							<li>|</li>
-							<li>Album Name</li>
-							<li>|</li>
-							<li>Genre</li>
-						</ol>
-			</div>
 
-			<div>
-				<h2>Song Name</h2>
-						<ol>
-							<li>Artist Name</li>
-							<li>|</li>
-							<li>Album Name</li>
-							<li>|</li>
-							<li>Genre</li>
-						</ol>
-			</div>
+	<input type="text" name="Song Name" value="" placeholder="Song Name"><br>
+	<input type="text" name="Artist" value="" placeholder="Artist"><br>
+	<input type="text" name="Album" value="" placeholder="Album">
 
-			<div>
-				<h2>Song Name</h2>
-						<ol>
-							<li>Artist Name</li>
-							<li>|</li>
-							<li>Album Name</li>
-							<li>|</li>
-							<li>Genre</li>
-						</ol>
-			</div>
- -->
-		</section>
-		</div>
+<!-- This is for the ADD button -->
+      <div class="button">
+        <button type="submit">ADD</button>
+    	</div>
+</div>
+  <!-- ///////////////////////ADD MUSIC VIEW ENDS HERE////////////////////////////// -->
 		<script src="songs.js" type="text/javascript"></script>
+		<script src="home.js" type="text/javascript"></script>
+		<script src="list.js" type="text/javascript"></script>
+		<script src="add.js" type="text/javascript"></script>
 	</body>
 </html>
 
